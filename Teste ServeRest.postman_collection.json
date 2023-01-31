@@ -167,7 +167,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nome\": \"Renata Machado\",\r\n  \"email\": \"renata@qa.com.br\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
+					"raw": "{\r\n  \"nome\": \"Mauricio Passos\",\r\n  \"email\": \"mauricio@qa.com.br\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -257,9 +257,83 @@
 							"pm.test(\"Alterado com sucesso\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Fulano da Silva2\",\r\n  \"email\": \"beltrano52@qa.com.br\",\r\n  \"password\": \"teste45\",\r\n  \"administrador\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}usuarios/uUQGxLU5e3enZqp6",
+					"host": [
+						"{{local}}usuarios"
+					],
+					"path": [
+						"uUQGxLU5e3enZqp6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar usuário 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
 							"pm.test(\"Cadastro com sucesso\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Fulano da Silva\",\r\n  \"email\": \"beltrano4@qa.com.br\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local}}usuarios/ZAABLnIebzGgv78k",
+					"host": [
+						"{{local}}usuarios"
+					],
+					"path": [
+						"ZAABLnIebzGgv78k"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar usuário 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
 							"pm.test(\"e-mail já cadastrado\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
 							"});"
@@ -273,7 +347,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"nome\": \"Fulano da Silva\",\r\n  \"email\": \"beltrano@qa.com.br\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
+					"raw": "{\r\n  \"nome\": \"Fulano da Silva\",\r\n  \"email\": \"beltrano4@qa.com.br\",\r\n  \"password\": \"teste\",\r\n  \"administrador\": \"true\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
